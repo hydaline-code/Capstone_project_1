@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import "./reset";
-@mixin flexcenter ($direction){
+@mixin flexcenter ($direction) {
   display: flex;
   flex-direction: $direction;
   justify-content: space-between;
   align-items: center;
   align-content: space-around;
 };
+
 $picpath: "./pics";
 $colors-swatch: (
 	"blacklight": #272a31,
@@ -34,6 +35,7 @@ header {
 		margin: 1rem;
 		font-size: 30px;
 	}
+
 }
 
 .home-intro {
@@ -176,33 +178,33 @@ hr {
   }
 
  .p-descrip {
-  font-style: italic;
-  color: map-get($colors-swatch , redlight );
-  font-size: 12px;
-  text-align: justify;
-  margin-top: 0.5rem;
+    font-style: italic;
+    color: map-get($colors-swatch , redlight );
+    font-size: 12px;
+    text-align: justify;
+    margin-top: 0.5rem;
  }
 
  .p2-descrip {
   font-size: 14px;
-
- }
+  }
 }
+
 .speak-btn {
   width: 90%;
   height: 40px;
   font-size: 18px;
-  margin: 2rem 1rem 2rem 1.2rem ;
-  color: map-get($colors-swatch , blacklight );
+  margin: 2rem 1rem 2rem 1.2rem;
+  color: map-get($colors-swatch, blacklight);
   background: #fff;
   border: #d3d3d3 solid 1px;
   border-radius: 2px;
-  .des{
-   position: relative;
-   bottom: 9px;
-   font-size: 26px;
-   left: 5px;
-   color: map-get($colors-swatch , redlight);
+
+  .des {
+    position: relative;
+    bottom: 9px;
+    font-size: 26px;
+    left: 5px;
+    color: map-get($colors-swatch, redlight);
   }
 }
-
