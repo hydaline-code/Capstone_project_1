@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import "./reset";
+@mixin flexcenter ($direction){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+};
+$picpath: "./pics";
+$colors-swatch: (
+	"blacklight": #272a31,
+	"redlight": #ed4835,
+	"dark-white": #d3d3d3,
+);
+$font: "Lato", sans-serif;
+
+body {
+	margin: 0 auto;
+	width: 375px;
+  font-family: $font;
+}
+
+main {
+	background: url(../pics/tech.webp);
+	//border: solid rgb(222, 38, 17) 2px;
+}
+
+header {
+	height: 100px;
+	//border: solid salmon 2px;
+ // background: url(../pics/itkids.jpg);
+	nav {
+		margin: 1rem;
+		font-size: 30px;
+	}
+}
+
+.home-intro {
+	color: map-get($colors-swatch, redlight);
+  margin: 0 1.2rem 0 0.5rem;
+
+	#{&}-intro p {
+		font-size: 22px;
+	}
+
+	#{&}-intro h1 {
+		font-size: 42px;
+    text-shadow: 2px 2px 7px map-get($colors-swatch, redlight);
+}
+
+}
+
+.intro-p {
+  box-shadow: 5px 5px 5px 3px #dddddd;
+  margin: 0.5rem;
+  border: #d3d2d2 solid 1px;
+}
+.intro-p p ,
+.p-present {
+	margin: 1rem;
+  padding: 0.5rem 0.3rem 0.5rem 0.7rem;
+  font-size: 16px;
+}
+
+u {
+  font-weight: bold;
+}
+
+strong {
+  color: map-get($colors-swatch , redlight );
+}
+
+.intro-dat  {
+  margin: 1rem;
+  //border: solid 3px #840a0a;
+}
+
+.intro-dat  date {
+  font-size: 22px;
+}
+
+.intro-dat  p {
+ font-size: 14px;
+}
+
+#home-container {
+  margin-top: 3rem;
+  background-color:  map-get($colors-swatch , blacklight );;
+  color: map-get($colors-swatch , dark-white );
+
+  h2 {
+    text-align: center;
+  }
+}
+
+hr {
+  width: 100px;
+  border: solid #ec5242;
+  margin-left: 40%;
+  margin-top: 0.5rem;
+}
+
+.dynamicimg1 {
+  width: 100%;
+}
+.icons  {
+  
+  h2 {
+    text-align: center;
+    font-size: 23px;
+  }
+  .mod-items {
+   background: rosybrown;
+   color: map-get($colors-swatch , blacklight );
+   font-size: 20px;
+   padding: 1rem;
+  }
+  .mod-items li {
+    list-style: square;
+    background: #d3d2d2;
+    margin-left: 1rem;
+    margin: 0.5rem;
+  }
+}
+
+.join-btn {
+  width: 270px;
+  height: 80px;
+  margin: 2rem 2rem 2rem 3.4rem;
+  background: map-get($colors-swatch , redlight );
+  font-size: 25px;
+  border-style: none;
+  color: map-get($colors-swatch , dark-white );
+}
+
+#teachers {
+  h2 {
+    text-align: center;
+    font-size: 25px;
+    color: map-get($colors-swatch , blacklight );
+  }
+  hr {
+    width: 80px;
+    margin-top: 0.5rem;
+  }
+
+  .speakers1 {
+    width: 50%;
+   // background: map-get($colors-swatch , blacklight );
+    text-align: center;
+    
+  }
+  .imgdescrip {
+    width: 70%;
+    border: solid 1rem;
+    border-style: double;
+    background: map-get($colors-swatch , redlight );
+  }
+  .underline {
+    width: 65%;
+    margin: 0.5rem 4.5rem 0.5rem 0;
+    border: solid 1px #ec5242;
+  }
+
+  .speakers {
+    @include flexcenter(row);
+    margin-top: 1rem;
+  }
+  .descrip {
+    margin-right: 1rem;
+    width: 250px;
+    margin-bottom: 1rem;
+    @include flexcenter(column);
+    
+  }
+
+ .p-descrip {
+  font-style: italic;
+  color: map-get($colors-swatch , redlight );
+  font-size: 12px;
+  text-align: justify;
+  margin-top: 0.5rem;
+ }
+
+ .p2-descrip {
+  font-size: 14px;
+
+ }
+}
+.speak-btn {
+  width: 90%;
+  height: 40px;
+  font-size: 18px;
+  margin: 2rem 1rem 2rem 1.2rem ;
+  color: map-get($colors-swatch , blacklight );
+  background: #fff;
+  border: #d3d3d3 solid 1px;
+  border-radius: 2px;
+  .des{
+   position: relative;
+   bottom: 9px;
+   font-size: 26px;
+   left: 5px;
+   color: map-get($colors-swatch , redlight);
+  }
+}
+

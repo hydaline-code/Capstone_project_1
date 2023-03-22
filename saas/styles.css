@@ -1,1 +1,186 @@
-/*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: 375px;
+  font-family: "Lato", sans-serif;
+}
+
+main {
+  background: url(../pics/tech.webp);
+}
+
+header {
+  height: 100px;
+}
+header nav {
+  margin: 1rem;
+  font-size: 30px;
+}
+
+.home-intro {
+  color: #ed4835;
+  margin: 0 1.2rem 0 0.5rem;
+}
+.home-intro .home-intro-intro p {
+  font-size: 22px;
+}
+.home-intro .home-intro-intro h1 {
+  font-size: 42px;
+  text-shadow: 2px 2px 7px #ed4835;
+}
+
+.intro-p {
+  box-shadow: 5px 5px 5px 3px #dddddd;
+  margin: 0.5rem;
+  border: #d3d2d2 solid 1px;
+}
+
+.intro-p p,
+.p-present {
+  margin: 1rem;
+  padding: 0.5rem 0.3rem 0.5rem 0.7rem;
+  font-size: 16px;
+}
+
+u {
+  font-weight: bold;
+}
+
+strong {
+  color: #ed4835;
+}
+
+.intro-dat {
+  margin: 1rem;
+}
+
+.intro-dat date {
+  font-size: 22px;
+}
+
+.intro-dat p {
+  font-size: 14px;
+}
+
+#home-container {
+  margin-top: 3rem;
+  background-color: #272a31;
+  color: #d3d3d3;
+}
+#home-container h2 {
+  text-align: center;
+}
+
+hr {
+  width: 100px;
+  border: solid #ec5242;
+  margin-left: 40%;
+  margin-top: 0.5rem;
+}
+
+.dynamicimg1 {
+  width: 100%;
+}
+
+.icons h2 {
+  text-align: center;
+  font-size: 23px;
+}
+.icons .mod-items {
+  background: rosybrown;
+  color: #272a31;
+  font-size: 20px;
+  padding: 1rem;
+}
+.icons .mod-items li {
+  list-style: square;
+  background: #d3d2d2;
+  margin-left: 1rem;
+  margin: 0.5rem;
+}
+
+.join-btn {
+  width: 270px;
+  height: 80px;
+  margin: 2rem 2rem 2rem 3.4rem;
+  background: #ed4835;
+  font-size: 25px;
+  border-style: none;
+  color: #d3d3d3;
+}
+
+#teachers h2 {
+  text-align: center;
+  font-size: 25px;
+  color: #272a31;
+}
+#teachers hr {
+  width: 80px;
+  margin-top: 0.5rem;
+}
+#teachers .speakers1 {
+  width: 50%;
+  text-align: center;
+}
+#teachers .imgdescrip {
+  width: 70%;
+  border: solid 1rem;
+  border-style: double;
+  background: #ed4835;
+}
+#teachers .underline {
+  width: 65%;
+  margin: 0.5rem 4.5rem 0.5rem 0;
+  border: solid 1px #ec5242;
+}
+#teachers .speakers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+  margin-top: 1rem;
+}
+#teachers .descrip {
+  margin-right: 1rem;
+  width: 250px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+}
+#teachers .p-descrip {
+  font-style: italic;
+  color: #ed4835;
+  font-size: 12px;
+  text-align: justify;
+  margin-top: 0.5rem;
+}
+#teachers .p2-descrip {
+  font-size: 14px;
+}
+
+.speak-btn {
+  width: 90%;
+  height: 40px;
+  font-size: 18px;
+  margin: 2rem 1rem 2rem 1.2rem;
+  color: #272a31;
+  background: #fff;
+  border: #d3d3d3 solid 1px;
+  border-radius: 2px;
+}
+.speak-btn .des {
+  position: relative;
+  bottom: 9px;
+  font-size: 26px;
+  left: 5px;
+  color: #ed4835;
+}/*# sourceMappingURL=styles.css.map */
