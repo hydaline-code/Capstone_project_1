@@ -1,0 +1,15 @@
+@mixin flexcenter($direction) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: space-between;
+	align-items: center;
+	align-content: space-around;
+}
+
+$picpath: "./pics";
+$colors-swatch: (
+	"blacklight": #272a31,
+	"redlight": #ed4835,
+	"dark-white": #d3d3d3,
+);
+$font: "Lato", sans-serif;

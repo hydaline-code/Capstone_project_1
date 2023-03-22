@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.about-p {
+  width: 300px;
+  border: solid 5px red;
+}
+
 body {
   margin: 0 auto;
   width: 375px;
