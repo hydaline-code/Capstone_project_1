@@ -1,4 +1,11 @@
 @import "./variable";
+@mixin flexcenter($direction) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
 
 .about{
 	background:map-get($colors-swatch, gra);
@@ -13,16 +20,19 @@
 		font-size: 30px;
 		margin-top: 0.5rem;
 	}
+
 	P {
 		color: map-get($colors-swatch, redlight);
 	}
 }
+
 .about-p {
 	width: 300px;
 	border: #d3d3d3 solid 2px;
 	margin-left: 0.4rem;
 	background:map-get($colors-swatch, white-light);
 	box-shadow: transparent;
+
 	p {
 		margin: 0.5rem;
 		font-size: 14px;
@@ -30,6 +40,7 @@
 		color: map-get($colors-swatch, blacklight);
 	}
 }
+
 .about-info {
 	margin: 2rem;
 	text-align: center;
@@ -58,10 +69,12 @@
 		margin-top: 0;
 		border:solid red 1px;
 	}
+
 	p {
 		margin-top: 1rem;
 	}
 }
+
 .about-logo {
 	padding: 2rem;
 	border: #d3d3d3 solid 2px;
@@ -81,13 +94,15 @@
 			font-size: 25px;
 			font-weight: 900;
 		}
+
 		h5 {
 			font-size: 10px;
 		}
 
 		.line1 {
-			width: 50%;
+			width: 60%;
 			border: solid  1px;
+			margin-left: 20%;
 		}
 	}
 }
@@ -103,21 +118,22 @@
 	padding: 2rem;
 	gap: 1rem;
 
-
 	.line3 {
 		width: 10%;
 		border: solid rgb(252, 56, 56) 1px;
 		margin-left:0;
 		margin-top: 0
 	}
+
 	.about-activities-1 {
-		@include flexcenter(column);
-		margin: 0; 
-		gap: 1rem;
-		.event {
-			width: 100%;
-			z-index: 0;
-		}
+		@extend .about-activities;
+		 margin: 0; 
+		 gap: 1rem;
+			.event {
+				width: 100%;
+				z-index: 0;
+			}
+
 		.event1 {
 			margin-top: 1rem;
 			background-image: url("../pics/image44.png") ;
@@ -127,22 +143,18 @@
 
 			p {
 				text-align: center;
-				font-size: 17px;
+				font-size: 16px;
 				margin-top: 1rem;
 				color:  map-get($colors-swatch, white-light);
 			}
 		}
+
 		.event2 {
 			background-image: url("../pics/imageorg.jpg") ;
-			height: 180px;
-			width: 350px;
-			box-shadow: inset 0 0 0 1000vmax rgba(236, 82, 66, 0.5);
+			@extend  .event1;
 
 			p {
-				text-align: center;
-				font-size: 17px;
-				margin-top: 1rem;
-				color:  map-get($colors-swatch, white-light);
+				@extend  p ;
 			}
 		}
 	}
@@ -156,25 +168,24 @@
 	h3 {
 		text-align: center
 	}
+
 	hr {
-		margin-right: 20%;
-		width: 20%;
+		border: solid red 1px;
+		margin-right: 10%;
+		width: 12%;
 	}
 	
-	.partner1 , .partner2 {
+	.partner1 {
 		@include flexcenter(row);
 		list-style: none;
 		font-size: 25px;
 		gap: 1rem;
-		margin-top: 2rem;
-	}
-	
-	.partner2 {
-		margin: 2rem  2rem 2rem  2rem;
+		margin: 2rem  2rem 0  0;
 	}
 
-	.partner1 {
-		margin: 2rem  2rem 0  0;
+	.partner2 {
+		@extend .partner1;
+		margin: 2rem  2rem 2rem  2rem;
 	}
 }
 
@@ -191,6 +202,5 @@ footer {
 		.logo {
 			width: 25%;
 		}
-
 	}
 }

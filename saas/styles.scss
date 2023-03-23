@@ -3,7 +3,13 @@
 @import "./about";
 @import "./variable";
 
-
+@mixin flexcenter($direction) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
 body {
 	margin: 0 auto;
 	width: 375px;
