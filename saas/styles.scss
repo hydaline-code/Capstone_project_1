@@ -2,6 +2,14 @@
 @import "./reset";
 @import "./about";
 @import "./variable";
+@font-face {
+  font-family:"cocogoose";
+  src: url(../font/Cocogoose.ttf);
+}
+@font-face {
+  font-family:"cocogoose1";
+  src: url(../font/Cocogoose1.ttf);
+}
 
 @mixin flexcenter($direction) {
 	display: flex;
@@ -10,15 +18,20 @@
     align-items: center;
     align-content: space-around;
 }
+
 body {
 	margin: 0 auto;
 	width: 375px;
 	font-family: $font;
+  //@include mobile ;
+  
 }
 
 main {
 	background: url(../pics/tech.webp);
 	//border: solid rgb(222, 38, 17) 2px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -35,20 +48,31 @@ header {
 	color: map-get($colors-swatch, redlight);
 	margin: 0 1.2rem 0 0.5rem;
 
-	#{&}-intro p {
+	 p {
 		font-size: 22px;
 	}
 
-	#{&}-intro h1 {
-		font-size: 42px;
-		text-shadow: 2px 2px 7px map-get($colors-swatch, redlight);
+	 h1 {
+		font-size: 30px;
+    font-weight: 300;
+    background: url(../pics/h1.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    font-family: "cocogoose", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
 	}
+
 }
 
 .intro-p {
-	box-shadow: 5px 5px 5px 3px #dddddd;
+	box-shadow: 5px 5px 5px 3px #f4e8e8;
 	margin: 0.5rem;
-	border: #d3d2d2 solid 1px;
+	border: #d3d2d2 solid 1.5px;
 }
 .intro-p p,
 .p-present {
@@ -70,19 +94,27 @@ strong {
 	//border: solid 3px #840a0a;
 }
 
-.intro-dat date {
-	font-size: 22px;
+.intro-dat {
+  h2 {
+	font-size: 25px;
+  font-weight: bold;
+  color: map-get($colors-swatch, blacklight);
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
-.intro-dat p {
+ p {
 	font-size: 14px;
+}
 }
 
 #home-container {
 	margin-top: 3rem;
-	background-color: map-get($colors-swatch, blacklight);
-	color: map-get($colors-swatch, dark-white);
-
+  background: url(../pics/back.jpg);
+	color: map-get($colors-swatch, white-light);
 	h2 {
 		text-align: center;
 	}
@@ -96,24 +128,45 @@ hr {
 }
 
 .dynamicimg1 {
-	width: 100%;
+	width: 40%;
+  padding: 1rem;
+}
+
+.subdivpart1 {
+  @include flexcenter(column);
+  margin-top: 1rem;
+  background: map-get($colors-swatch,  white-light);
+  border-style: double;
+  border: solid 2px;
+  width: 300px;
+  margin-left: 2.3rem;
+  opacity: 0.9;
 }
 .icons {
+  @include flexcenter(row);
+  justify-content: space-evenly;
+
 	h2 {
 		text-align: center;
-		font-size: 23px;
+		font-size: 13px;
+    color: red;
+    font-weight: bold;
 	}
+
 	.mod-items {
-		background: rosybrown;
 		color: map-get($colors-swatch, blacklight);
-		font-size: 20px;
+		font-size: 12px;
 		padding: 1rem;
+   
+    text-align: left;
+    width: 100px;
+    margin-left: 1rem;
+    
 	}
 	.mod-items li {
 		list-style: square;
-		background: #d3d2d2;
-		margin-left: 1rem;
-		margin: 0.5rem;
+		
+		
 	}
 }
 
@@ -128,11 +181,16 @@ hr {
 }
 
 #teachers {
+  background: url(../pics/tech.webp);
+  background-size: contain;
+  //background-repeat: no-repeat;
+
 	h2 {
 		text-align: center;
 		font-size: 25px;
 		color: map-get($colors-swatch, blacklight);
 	}
+
 	hr {
 		width: 80px;
 		margin-top: 0.5rem;
@@ -143,12 +201,14 @@ hr {
 		// background: map-get($colors-swatch , blacklight );
 		text-align: center;
 	}
+
 	.imgdescrip {
 		width: 70%;
 		border: solid 1rem;
 		border-style: double;
 		background: map-get($colors-swatch, redlight);
 	}
+
 	.underline {
 		width: 65%;
 		margin: 0.5rem 4.5rem 0.5rem 0;
@@ -196,4 +256,11 @@ hr {
 		left: 5px;
 		color: map-get($colors-swatch, redlight);
 	}
+}
+
+$breakpoint-tablet: 768px;
+@media (min-width: $breakpoint-tablet) {
+  body {
+    //background: red;
+  }
 }

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "cocogoose";
+  src: url(../font/Cocogoose.ttf);
+}
 .about {
   background: rgb(205, 202, 202);
   background: linear-gradient(rgba(77, 76, 76, 0), rgb(162, 161, 161));
@@ -18,18 +22,29 @@
 
 .about-h h1 {
   font-size: 30px;
-  margin-top: 0.5rem;
+  font-weight: 300;
+  background: url(../pics/h1.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-transform: uppercase;
+  font-family: "cocogoose", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
 }
 .about-h P {
-  color: #ed4835;
+  color: #e83926;
 }
 
 .about-p {
   width: 300px;
-  border: #d3d3d3 solid 2px;
+  border: #c0bebe solid 2px;
   margin-left: 0.4rem;
   background: #fff;
-  box-shadow: transparent;
+  box-shadow: 10px 5px 5px 3px #a1a0a0;
 }
 .about-p p, .about-p .about-activities .about-activities-1 .event2 p, .about-activities .about-activities-1 .event2 .about-p p {
   margin: 0.5rem;
@@ -84,6 +99,8 @@
   align-content: space-around;
   justify-content: space-around;
   gap: 0;
+  width: 300px;
+  box-shadow: 7px 5px 5px 5px #bcb0b0;
 }
 .about-logo .logo {
   margin: 1rem;
@@ -118,7 +135,7 @@
   justify-content: space-between;
   align-items: center;
   align-content: space-around;
-  padding: 2rem;
+  margin-bottom: 2rem;
   gap: 1rem;
 }
 .about-activities .line3 {
@@ -180,6 +197,7 @@
 }
 
 footer {
+  width: 100%;
   padding: 1.5rem;
   display: flex;
   flex-direction: row;
@@ -203,6 +221,14 @@ footer div .logo {
   width: 25%;
 }
 
+@font-face {
+  font-family: "cocogoose";
+  src: url(../font/Cocogoose.ttf);
+}
+@font-face {
+  font-family: "cocogoose1";
+  src: url(../font/Cocogoose1.ttf);
+}
 body {
   margin: 0 auto;
   width: 375px;
@@ -211,6 +237,8 @@ body {
 
 main {
   background: url(../pics/tech.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -222,21 +250,32 @@ header nav {
 }
 
 .home-intro {
-  color: #ed4835;
+  color: #e83926;
   margin: 0 1.2rem 0 0.5rem;
 }
-.home-intro .home-intro-intro p, .home-intro .home-intro-intro .about-activities .about-activities-1 .event2 p, .about-activities .about-activities-1 .event2 .home-intro .home-intro-intro p {
+.home-intro p, .home-intro .about-activities .about-activities-1 .event2 p, .about-activities .about-activities-1 .event2 .home-intro p {
   font-size: 22px;
 }
-.home-intro .home-intro-intro h1 {
-  font-size: 42px;
-  text-shadow: 2px 2px 7px #ed4835;
+.home-intro h1 {
+  font-size: 30px;
+  font-weight: 300;
+  background: url(../pics/h1.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-transform: uppercase;
+  font-family: "cocogoose", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
 }
 
 .intro-p {
-  box-shadow: 5px 5px 5px 3px #dddddd;
+  box-shadow: 5px 5px 5px 3px #f4e8e8;
   margin: 0.5rem;
-  border: #d3d2d2 solid 1px;
+  border: #d3d2d2 solid 1.5px;
 }
 
 .intro-p p, .intro-p .about-activities .about-activities-1 .event2 p, .about-activities .about-activities-1 .event2 .intro-p p,
@@ -251,25 +290,35 @@ u {
 }
 
 strong {
-  color: #ed4835;
+  color: #e83926;
 }
 
 .intro-dat {
   margin: 1rem;
 }
 
-.intro-dat date {
-  font-size: 22px;
+.intro-dat h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #272a31;
+  display: block;
+  -webkit-margin-before: 0.83em;
+          margin-block-start: 0.83em;
+  -webkit-margin-after: 0.83em;
+          margin-block-end: 0.83em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
 }
-
 .intro-dat p, .intro-dat .about-activities .about-activities-1 .event2 p, .about-activities .about-activities-1 .event2 .intro-dat p {
   font-size: 14px;
 }
 
 #home-container {
   margin-top: 3rem;
-  background-color: #272a31;
-  color: #d3d3d3;
+  background: url(../pics/back.jpg);
+  color: #fff;
 }
 #home-container h2 {
   text-align: center;
@@ -283,36 +332,65 @@ hr {
 }
 
 .dynamicimg1 {
-  width: 100%;
+  width: 40%;
+  padding: 1rem;
 }
 
+.subdivpart1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+  margin-top: 1rem;
+  background: #fff;
+  border-style: double;
+  border: solid 2px;
+  width: 300px;
+  margin-left: 2.3rem;
+  opacity: 0.9;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
 .icons h2 {
   text-align: center;
-  font-size: 23px;
+  font-size: 13px;
+  color: red;
+  font-weight: bold;
 }
 .icons .mod-items {
-  background: rosybrown;
   color: #272a31;
-  font-size: 20px;
+  font-size: 12px;
   padding: 1rem;
+  text-align: left;
+  width: 100px;
+  margin-left: 1rem;
 }
 .icons .mod-items li {
   list-style: square;
-  background: #d3d2d2;
-  margin-left: 1rem;
-  margin: 0.5rem;
 }
 
 .join-btn {
   width: 270px;
   height: 80px;
   margin: 2rem 2rem 2rem 3.4rem;
-  background: #ed4835;
+  background: #e83926;
   font-size: 25px;
   border-style: none;
   color: #d3d3d3;
 }
 
+#teachers {
+  background: url(../pics/tech.webp);
+  background-size: contain;
+}
 #teachers h2 {
   text-align: center;
   font-size: 25px;
@@ -330,7 +408,7 @@ hr {
   width: 70%;
   border: solid 1rem;
   border-style: double;
-  background: #ed4835;
+  background: #e83926;
 }
 #teachers .underline {
   width: 65%;
@@ -357,7 +435,7 @@ hr {
 }
 #teachers .p-descrip {
   font-style: italic;
-  color: #ed4835;
+  color: #e83926;
   font-size: 12px;
   text-align: justify;
   margin-top: 0.5rem;
@@ -381,5 +459,5 @@ hr {
   bottom: 9px;
   font-size: 26px;
   left: 5px;
-  color: #ed4835;
+  color: #e83926;
 }/*# sourceMappingURL=styles.css.map */
