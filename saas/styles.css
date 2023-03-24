@@ -293,6 +293,10 @@ header {
   background: #fbfbfb;
 }
 
+.nav-items a {
+  text-decoration: none;
+}
+
 .bar {
   display: block;
   width: 25px;
@@ -300,10 +304,6 @@ header {
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
   background-color: #000;
-}
-
-.link .active:nth-child(2) {
-  display: contents;
 }
 
 .home-intro {
@@ -480,15 +480,27 @@ hr {
   align-content: space-around;
   margin-top: 1rem;
 }
-#teachers .descrip {
-  margin-right: 1rem;
-  width: 250px;
-  margin-bottom: 1rem;
+#teachers .speakers:nth-child(3) {
+  display: none;
+}
+#teachers .speakers:nth-child(2) {
+  display: none;
+}
+#teachers .speakers:nth-child(3).active {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   align-content: space-around;
+  margin-top: 1rem;
+}
+#teachers .speakers:nth-child(2).active {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+  margin-top: 1rem;
 }
 #teachers .p-descrip {
   font-style: italic;
@@ -511,7 +523,8 @@ hr {
   border: #d3d3d3 solid 1px;
   border-radius: 2px;
 }
-.speak-btn .des {
+
+.des {
   position: relative;
   bottom: 9px;
   font-size: 26px;

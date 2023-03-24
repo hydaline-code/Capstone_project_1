@@ -193,6 +193,11 @@ instructors.forEach((lecturer) => {
 
 });
 
+/*const MoreBtn = document.createElement('button');
+MoreBtn.classList.add('speak-btn');
+speaker.appendChild(MoreBtn);
+MoreBtn.textContent='MORE \u2228';*/
+
 
 const Menu = document.querySelector('.nav-menu');
 const hamburger = document.querySelector('.hambuger');
@@ -202,12 +207,24 @@ hamburger.addEventListener('click', () => {
   Menu.classList.toggle('active');
   
 });
+const MoreBtn = document.querySelector('.speak-btn');
+const people = document.querySelector('.speakers:nth-child(3)');
+const people1 = document.querySelector('.speakers:nth-child(2)');
 
-const about = document.querySelector('.links');
-
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  Menu.classList.toggle('active');
+MoreBtn.addEventListener("click", () => {
+ people.classList.toggle('active');
+ people1.classList.toggle('active');
+   if (MoreBtn.classList.contains('less')) {
+    MoreBtn.innerHTML = 'MORE<i class="fa fa-chevron-down" style="color: rgb(249, 62, 62);"></i>';
+    MoreBtn.classList.remove('less');
+  } else {
+    MoreBtn.innerHTML = 'LESS ' ;
+    MoreBtn.classList.add('less');
+  }
   
 });
+
+
+
+
 

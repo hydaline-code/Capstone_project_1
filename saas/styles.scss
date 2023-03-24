@@ -85,6 +85,9 @@ header {
   font-weight: bold;
   background: #fbfbfb;
 }
+.nav-items a {
+  text-decoration: none;
+}
 
 .bar {
   display: block;
@@ -94,10 +97,6 @@ header {
   -webkit-transition: all 0.3 ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #000;
-}
-
-.link .active:nth-child(2) {
-  display: contents;
 }
 
 .home-intro {
@@ -275,13 +274,25 @@ hr {
 		@include flexcenter(row);
 		margin-top: 1rem;
 	}
-	.descrip {
-		margin-right: 1rem;
-		width: 250px;
-		margin-bottom: 1rem;
-		@include flexcenter(column);
-	}
 
+  .speakers:nth-child(3) {
+    display: none;
+  }
+
+ .speakers:nth-child(2) {
+    display: none;
+  }
+  
+  .speakers:nth-child(3).active {
+    @include flexcenter(row);
+		margin-top: 1rem;
+  }
+
+  .speakers:nth-child(2).active {
+    @include flexcenter(row);
+		margin-top: 1rem;
+  }
+  
 	.p-descrip {
 		font-style: italic;
 		color: map-get($colors-swatch, redlight);
@@ -295,7 +306,7 @@ hr {
 	}
 }
 
-.speak-btn {
+.speak-btn{
 	width: 90%;
 	height: 40px;
 	font-size: 18px;
@@ -304,6 +315,8 @@ hr {
 	background: #fff;
 	border: #d3d3d3 solid 1px;
 	border-radius: 2px;
+}
+
 
 	.des {
 		position: relative;
@@ -312,7 +325,7 @@ hr {
 		left: 5px;
 		color: map-get($colors-swatch, redlight);
 	}
-}
+
 
 $breakpoint-tablet: 768px;
 @media (min-width: $breakpoint-tablet) {
