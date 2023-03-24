@@ -122,12 +122,16 @@ title1.textContent ='Instructors';
 const lineh1 = document.createElement('hr');
 title1.appendChild(lineh1);
 
+const gridimg = document.createElement('div');
+  gridimg.classList.add ('containerimg');
+  speaker.appendChild(gridimg);
+
 const instructors =[
   {
     name:'Pr.Anna Firr Thene',
     profession:'Co-Founder of DigiTech4kids and Speaker at Google Women Tech',
     description:'University professor and author of many technical articles in education',
-    img:'pics/lect31.jpg'
+    img:'pics/lect3.png'
     
   },
 
@@ -135,14 +139,14 @@ const instructors =[
     name:'Manuella Ella Goore',
     profession:'UI/UX designer at Indeed and Graphic Designer',
     description:'With 5+ experience, author of 2-UI/UX design book',
-    img:'pics/lect21.jpg'
+    img:'pics/lect21.png'
   },
 
   {
     name:'Elissa  Anderson',
     profession:' Mentor at OpenClassroom and App developer',
     description:'Author of 5 technical Blog for developers',
-    img:'pics/lect11.jpg'
+    img:'pics/lect11.png'
   },
 
   {
@@ -155,17 +159,17 @@ const instructors =[
 ]
 
 instructors.forEach((lecturer) => {
-  const divpart2 = document.createElement('div');
+  /*const divpart2 = document.createElement('div');
   divpart2.classList.add ('speakers');
-  speaker.appendChild(divpart2);
+  gridimg.appendChild(divpart2);*/
 
   const part2 = document.createElement('div');
   part2.classList.add ('speakers1');
-  divpart2.appendChild(part2);
+  gridimg.appendChild(part2);
 
   const part21 = document.createElement('div');
   part21.classList.add ('descrip');
-  divpart2.appendChild(part21);
+  gridimg.appendChild(part21);
 
   const image = document.createElement('img');
   image.classList.add ('imgdescrip');
@@ -193,11 +197,6 @@ instructors.forEach((lecturer) => {
 
 });
 
-/*const MoreBtn = document.createElement('button');
-MoreBtn.classList.add('speak-btn');
-speaker.appendChild(MoreBtn);
-MoreBtn.textContent='MORE \u2228';*/
-
 
 const Menu = document.querySelector('.nav-menu');
 const hamburger = document.querySelector('.hambuger');
@@ -208,12 +207,21 @@ hamburger.addEventListener('click', () => {
   
 });
 const MoreBtn = document.querySelector('.speak-btn');
-const people = document.querySelector('.speakers:nth-child(3)');
-const people1 = document.querySelector('.speakers:nth-child(2)');
+const people1 = document.querySelector('.containerimg div:nth-of-type(1)');
+const people2 = document.querySelector('.containerimg div:nth-of-type(2)');
+const people3 = document.querySelector('.containerimg div:nth-of-type(3)');
+const people4 = document.querySelector('.containerimg div:nth-of-type(4)');
+//const people2 = document.querySelector('.containerimg:nth-child(3)');
+/*const people3 = document.querySelector('.containerimg:nth-child(3)');
+const people4= document.querySelector('.containerimg:nth-child(4)');
+//const people1 = document.querySelector('.speakers:nth-child(2)');*/
 
 MoreBtn.addEventListener("click", () => {
- people.classList.toggle('active');
  people1.classList.toggle('active');
+ people2.classList.toggle('active');
+ people3.classList.toggle('active');
+ people4.classList.toggle('active');
+
    if (MoreBtn.classList.contains('less')) {
     MoreBtn.innerHTML = 'MORE<i class="fa fa-chevron-down" style="color: rgb(249, 62, 62);"></i>';
     MoreBtn.classList.remove('less');
