@@ -19,6 +19,7 @@
     align-content: space-around;
 }
 
+
 body {
 	margin: 0 auto;
 	width: 375px;
@@ -38,10 +39,65 @@ header {
 	height: 100px;
 	//border: solid salmon 2px;
 	// background: url(../pics/itkids.jpg);
-	nav {
-		margin: 1rem;
-		font-size: 30px;
-	}
+}
+		
+    .hambuger {
+      display: block;
+      cursor: pointer;
+      margin-right: 90%;
+    }
+
+
+    .hambuger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hambuger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hambuger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+      display: none;
+    }
+
+.nav-menu.active {
+  position: relative;
+  overflow: hidden;
+  @include flexcenter(row);
+  background-color: rgb(241, 144, 144);
+  transition-timing-function: ease-out;
+  padding: 1rem 0 1.5rem 1rem;
+  opacity: 0.8;
+}
+
+.nav-items {
+  font-size: 20px;
+  list-style: none;
+  margin-right: 0.5rem;
+}
+
+.nav-items:hover {
+  color: #f74747;
+  font-weight: bold;
+  background: #fbfbfb;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #000;
+}
+
+.link .active:nth-child(2) {
+  display: contents;
 }
 
 .home-intro {
