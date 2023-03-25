@@ -544,14 +544,21 @@ footer div .logo {
   .header-2 {
     display: none;
   }
+  .partners {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   .navbar {
     display: none;
   }
   .header-1 {
-    border: solid rgb(0, 140, 255) 3px;
     height: 30px;
+    background: #3E3E3E;
+    color: #fff;
   }
   .header-1d {
     display: flex;
@@ -569,12 +576,12 @@ footer div .logo {
     align-content: space-around;
     justify-content: space-evenly;
     gap: 2rem;
-    border: solid;
     margin-right: 3rem;
+    list-style: none;
   }
   .header-2 {
-    border: solid red 3px;
     height: 75px;
+    background: #FFFFFF;
   }
   .desk-nav {
     display: flex;
@@ -583,7 +590,9 @@ footer div .logo {
     align-items: center;
     align-content: space-around;
     justify-content: space-around;
-    border: solid;
+  }
+  .logo1 img {
+    width: 50%;
   }
   .nav-d {
     display: flex;
@@ -592,8 +601,23 @@ footer div .logo {
     align-items: center;
     align-content: space-around;
     justify-content: space-between;
-    border: solid;
     gap: 2rem;
+    list-style: none;
+  }
+  .nav-d a {
+    text-decoration: none;
+    color: #868686;
+    font-weight: 800;
+    font-size: 14px;
+  }
+  .logo2 {
+    width: 123px;
+    height: 48px;
+    border: 5px solid #ec4327;
+    font-size: 14px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: #ec5242;
+    font-weight: 800;
   }
   .home {
     margin-top: 2rem;
@@ -638,15 +662,8 @@ footer div .logo {
     width: 1440px;
     z-index: -1;
     margin-top: 0;
-    padding: 0 5rem 0 5rem;
+    padding: 8rem 5rem 0 5rem;
     background: #282B32;
-  }
-  #home-container hr {
-    width: 51px;
-    height: 0;
-    margin-top: 0.5rem;
-    margin-right: 2rem;
-    border: 2px solid #A04038;
   }
   #home-container h2 {
     text-align: center;
@@ -654,6 +671,11 @@ footer div .logo {
     font-weight: 400;
     font-size: 30px;
     line-height: 28px;
+    margin-right: 1rem;
+  }
+  #home-container h2 hr {
+    width: 50px;
+    border: 2px solid #A04038;
   }
   .containerhome {
     display: flex;
@@ -662,9 +684,10 @@ footer div .logo {
     align-items: center;
     align-content: space-around;
     margin: 8rem 2rem 8rem 2rem;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
   }
-  .subdivpart1 {
+  .containerhome .subdivpart1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -674,10 +697,10 @@ footer div .logo {
     opacity: 0.7;
     align-content: center;
     text-align: center;
-    height: 350px;
+    width: 370px;
     border-style: none;
   }
-  .icons {
+  .containerhome .icons {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -685,13 +708,11 @@ footer div .logo {
     align-content: space-around;
     justify-content: space-evenly;
   }
-  .icons h2 {
+  .containerhome .icons h2 {
     text-align: center;
-    font-size: 10px;
     color: #FF5438;
-    font-weight: bold;
   }
-  .icons .mod-items {
+  .containerhome .icons .mod-items {
     color: black;
     font-weight: bold;
     font-size: 15px;
@@ -702,15 +723,15 @@ footer div .logo {
     align-content: space-around;
     justify-content: space-evenly;
     gap: 1rem;
-    margin: 1rem 0 0.7rem 0;
+    margin: 1rem 0 1.3rem 0;
   }
-  .icons .mod-items li {
+  .containerhome .icons .mod-items li {
     list-style: none;
     border-style: double;
-    border: solid 5px rgb(136, 50, 50);
+    border: solid 3px rgb(136, 50, 50);
     background: #fff;
   }
-  .icons .dynamicimg1 {
+  .containerhome .icons .dynamicimg1 {
     width: 50%;
   }
   .join-btn,
@@ -739,5 +760,68 @@ footer div .logo {
   }
   #teachers .descrip {
     margin-left: 10%;
+  }
+  .partners {
+    background: #414246;
+  }
+  .partners h3 {
+    color: #8F8F91;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 28px;
+    margin-top: 1rem;
+  }
+  .partners .partners-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    gap: 5rem;
+  }
+  .partners .partners-1 hr {
+    width: 50px;
+    border: 2px solid #A04038;
+  }
+  .partners .subpartners {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    justify-items: center;
+  }
+  footer div img {
+    width: 50%;
+    margin-left: 20%;
+  }
+  footer .foot-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  footer .one {
+    height: 17px;
+    width: 338px;
+  }
+  footer .two {
+    height: 56px;
+    width: 683px;
   }
 }/*# sourceMappingURL=styles.css.map */
