@@ -397,6 +397,10 @@ hr {
   footer {
     display: none;
   }
+
+   .mobilef {
+    display: none;
+  }
 }
 
 $breakpoint-tablet-upper: 768px;
@@ -405,6 +409,15 @@ $breakpoint-tablet-upper: 768px;
   .navbar {
     display: none;
   }
+
+  .mobilef {
+    display: none;
+  }
+
+  .about-partner {
+    display: none;
+  }
+
   .header-1 {
     height: 30px;
     background: #3E3E3E;
@@ -643,7 +656,7 @@ margin-top: 1rem;
   }
 }
 
-footer {
+footer  {
   @include flexcenter(row);
   justify-content: space-around;
   justify-items: center;

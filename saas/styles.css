@@ -196,7 +196,7 @@
   margin: 2rem 2rem 2rem 2rem;
 }
 
-footer {
+footer .mobilef {
   width: 100%;
   padding: 1.5rem;
   display: flex;
@@ -206,21 +206,127 @@ footer {
   align-content: space-around;
   justify-content: space-around;
 }
-footer div {
+footer .mobilef div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   align-content: space-around;
 }
-footer div p, footer div .about-activities .about-activities-1 .event2 p, .about-activities .about-activities-1 .event2 footer div p {
+footer .mobilef div p, footer .mobilef div .about-activities .about-activities-1 .event2 p, .about-activities .about-activities-1 .event2 footer .mobilef div p {
   font-size: 12px;
   font-weight: bold;
 }
-footer div .logo {
+footer .mobilef div .logo {
   width: 25%;
 }
 
+.about-info .dd {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  footer {
+    background: #2E2E2E;
+    color: #fff;
+    padding: 3rem;
+  }
+  .about-activities, .about-activities .about-activities-1 {
+    background: #fff;
+  }
+  .about-activities h3, .about-activities .about-activities-1 h3 {
+    margin-top: 2rem;
+  }
+  .about-activities .about-activities-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+  }
+  .about-activities .about-activities-1 .event1 p, .about-activities .about-activities-1 .event2 p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 3rem;
+    color: #fff;
+  }
+  .about-host {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    align-items: center;
+    padding: 0px;
+    gap: 35px;
+  }
+  .about-host .about-host-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    text-align: center;
+    gap: 1rem;
+  }
+  .about-host .about-host-p hr {
+    width: 30px;
+    margin-right: 40%;
+    margin-top: 0;
+    border: solid red 1px;
+  }
+  .about-host .about-host-p p, .about-host .about-host-p .about-activities .about-activities-1 .event2 p, .about-activities .about-activities-1 .event2 .about-host .about-host-p p {
+    width: 759px;
+    margin-top: 1rem;
+  }
+  .about-host .about-logo {
+    width: 590px;
+    position: relative;
+    border: #d3d3d3 solid 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-host .about-logo .logo {
+    margin-left: 3rem;
+  }
+  .about-host .about-logo div p, .about-host .about-logo div .about-activities .about-activities-1 .event2 p, .about-activities .about-activities-1 .event2 .about-host .about-logo div p {
+    font-size: 18px;
+    font-weight: 900;
+    margin-right: 2rem;
+  }
+  .about-host .about-logo div h5 {
+    font-size: 10px;
+  }
+  .about-host .about-logo div .line1 {
+    width: 20%;
+    border: solid 1px;
+    margin-left: 40%;
+  }
+  .about-p {
+    width: 793px;
+  }
+  .about-p p, .about-p .about-activities .about-activities-1 .event2 p, .about-activities .about-activities-1 .event2 .about-p p {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 35px 65px;
+    gap: 10px;
+  }
+  .about-p .about-info .dd {
+    width: 640px;
+  }
+  .about-info .dd1 {
+    display: none;
+  }
+  .about {
+    padding-top: 1rem;
+  }
+}
 @font-face {
   font-family: "cocogoose";
   src: url(../font/Cocogoose.ttf);
@@ -550,9 +656,18 @@ footer div .logo {
   footer {
     display: none;
   }
+  .mobilef {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   .navbar {
+    display: none;
+  }
+  .mobilef {
+    display: none;
+  }
+  .about-partner {
     display: none;
   }
   .header-1 {
