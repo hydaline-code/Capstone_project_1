@@ -9,10 +9,10 @@ const courses = [
         name: 'Module2'
       },
       {
-        name: 'Capstone project'
+        name: ' Project'
       }
     ],
-    img:'pics/scratch.jpg'
+    img:'pics/scratch.png'
 
   },
 
@@ -26,10 +26,10 @@ const courses = [
         name: 'Module2'
       },
       {
-        name: 'Capstone project'
+        name: ' Project'
       }
     ],
-    img:'pics/html kids.png'
+    img:'pics/hcss.png'
   },
   
   {
@@ -42,14 +42,14 @@ const courses = [
         name: 'Module2'
       },
       {
-        name: 'Capstone project'
+        name: ' Project'
       }
     ],
-    img:'pics/python.png'
+    img:'pics/pyth1.png'
   },
   
   {
-    name:'ELECTRONIC  CIRCUITS DESIGN',
+    name:'CIRCUITS DESIGN',
     classes: [
       {
         name: 'Module1'
@@ -58,10 +58,10 @@ const courses = [
         name: 'Module2'
       },
       {
-        name: 'Capstone project'
+        name: ' Project'
       }
     ],
-    img:'pics/electronics.jpg'
+    img:'pics/elect3.png'
   },
 ]
 
@@ -78,13 +78,17 @@ para.classList.add ('p-present');
 orgpart1.appendChild(para);
 para.textContent='Our digital making projects have step-by-step instructions to teach you how to think computatioanlly, then create games, animations and much more'
 
+const gridimg2 = document.createElement('div');
+  gridimg2.classList.add ('containerhome');
+  orgpart1.appendChild(gridimg2);
+
 
 
 courses.forEach((part) => {
 
 const divpart1 = document.createElement('div');
 divpart1.classList.add ('subdivpart1');
-orgpart1.appendChild(divpart1);
+gridimg2.appendChild(divpart1);
 const moduleList = document.createElement('ul');
 moduleList.classList.add('mod-items');
 
@@ -166,11 +170,11 @@ instructors.forEach((lecturer) => {
   const part2 = document.createElement('div');
   part2.classList.add ('speakers1');
   gridimg.appendChild(part2);
-
+  
   const part21 = document.createElement('div');
   part21.classList.add ('descrip');
   gridimg.appendChild(part21);
-
+  
   const image = document.createElement('img');
   image.classList.add ('imgdescrip');
   part2.appendChild(image);
@@ -193,7 +197,7 @@ instructors.forEach((lecturer) => {
   const par2 = document.createElement('p');
   par2.classList.add ('p2-descrip');
   part21.appendChild(par2);
-  par2.textContent=lecturer.description
+  par2.textContent=lecturer.description;
 
 });
 
@@ -211,10 +215,33 @@ const people1 = document.querySelector('.containerimg div:nth-of-type(1)');
 const people2 = document.querySelector('.containerimg div:nth-of-type(2)');
 const people3 = document.querySelector('.containerimg div:nth-of-type(3)');
 const people4 = document.querySelector('.containerimg div:nth-of-type(4)');
+const people5 = document.querySelector('.containerimg div:nth-of-type(5)');
+const people6 = document.querySelector('.containerimg div:nth-of-type(6)');
 //const people2 = document.querySelector('.containerimg:nth-child(3)');
 /*const people3 = document.querySelector('.containerimg:nth-child(3)');
 const people4= document.querySelector('.containerimg:nth-child(4)');
 //const people1 = document.querySelector('.speakers:nth-child(2)');*/
+
+function media(screen) {
+
+  
+  if (screen.matches) { 
+  people1.classList.toggle('active');
+  people2.classList.toggle('active');
+ people3.classList.toggle('active');
+ people4.classList.toggle('active');
+ people5.classList.toggle('active');
+ people6.classList.toggle('active');
+  
+  } else {
+    MoreBtn.disabled=false;
+  }
+}
+
+const screen = window.matchMedia("(min-width: 768px)")
+media(screen) 
+screen.addListener(media)
+
 
 MoreBtn.addEventListener("click", () => {
  people1.classList.toggle('active');
@@ -231,6 +258,8 @@ MoreBtn.addEventListener("click", () => {
   }
   
 });
+
+
 
 
 

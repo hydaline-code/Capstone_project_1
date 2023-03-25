@@ -36,7 +36,7 @@
   -webkit-font-smoothing: antialiased;
 }
 .about-h P {
-  color: #e83926;
+  color: #FF5438;
 }
 
 .about-p {
@@ -294,7 +294,7 @@ footer div .logo {
     background-color: #000;
   }
   .home-intro {
-    color: #e83926;
+    color: #FF5438;
     margin: 0 1.2rem 0 0.5rem;
   }
   .home-intro p, .home-intro .about-activities .about-activities-1 .event2 p, .about-activities .about-activities-1 .event2 .home-intro p {
@@ -330,7 +330,7 @@ footer div .logo {
     font-weight: bold;
   }
   strong {
-    color: #e83926;
+    color: #FF5438;
   }
   .intro-dat {
     margin: 1rem;
@@ -360,6 +360,8 @@ footer div .logo {
   }
   #home-container h2 {
     text-align: center;
+    font-style: normal;
+    font-weight: 400;
   }
   hr {
     width: 100px;
@@ -379,8 +381,8 @@ footer div .logo {
     align-content: space-around;
     background: #fff;
     border-style: double;
-    border: solid 2px;
-    margin: 1rem 2rem 0 2rem;
+    border: solid 2px rgb(222, 57, 57);
+    margin: 0.5rem 2rem 0 2rem;
     opacity: 0.9;
     align-content: center;
     text-align: center;
@@ -414,7 +416,7 @@ footer div .logo {
     width: 270px;
     height: 80px;
     margin: 2rem 2rem 2rem 3.4rem;
-    background: #e83926;
+    background: #FF5438;
     font-size: 25px;
     border-style: none;
     color: #d3d3d3;
@@ -459,7 +461,7 @@ footer div .logo {
   }
   #teachers .containerimg {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 2rem;
   }
   #teachers .speakers1 {
@@ -471,7 +473,7 @@ footer div .logo {
     width: 100%;
     border: solid 1rem;
     border-style: double;
-    background: #e83926;
+    background: #FF5438;
   }
   #teachers .underline {
     width: 65%;
@@ -510,7 +512,7 @@ footer div .logo {
   }
   #teachers .p-descrip {
     font-style: italic;
-    color: #e83926;
+    color: #FF5438;
     font-size: 12px;
     text-align: left;
   }
@@ -532,6 +534,210 @@ footer div .logo {
     bottom: 9px;
     font-size: 26px;
     left: 5px;
-    color: #e83926;
+    color: #FF5438;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .header-1 {
+    display: none;
+  }
+  .header-2 {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .header-1 {
+    border: solid rgb(0, 140, 255) 3px;
+    height: 30px;
+  }
+  .header-1d {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    justify-content: flex-end;
+  }
+  .header-1d ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-evenly;
+    gap: 2rem;
+    border: solid;
+    margin-right: 3rem;
+  }
+  .header-2 {
+    border: solid red 3px;
+    height: 75px;
+  }
+  .desk-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    border: solid;
+  }
+  .nav-d {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-between;
+    border: solid;
+    gap: 2rem;
+  }
+  .home {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25.4902px;
+  }
+  .home-intro {
+    width: 732px;
+  }
+  .home-intro p, .home-intro .about-activities .about-activities-1 .event2 p, .about-activities .about-activities-1 .event2 .home-intro p {
+    font-size: 30px;
+  }
+  .home-intro h1 {
+    font-size: 50px;
+  }
+  .intro-p {
+    width: 756px;
+    border: solid 4px #fff;
+    height: 180px;
+    padding-top: 1rem;
+    background: #fcfcfc;
+  }
+  .intro-p p, .intro-p .about-activities .about-activities-1 .event2 p, .about-activities .about-activities-1 .event2 .intro-p p {
+    width: 696px;
+    background: #e8e7e7;
+    height: 109px;
+    padding-top: 2rem;
+    margin-left: 1.5rem;
+  }
+  .intro-dat h2 {
+    width: 605px;
+    font-size: 35px;
+  }
+  .intro-dat p, .intro-dat .about-activities .about-activities-1 .event2 p, .about-activities .about-activities-1 .event2 .intro-dat p {
+    width: 608px;
+    font-size: 20px;
+  }
+  #home-container {
+    width: 1440px;
+    z-index: -1;
+    margin-top: 0;
+    padding: 0 5rem 0 5rem;
+    background: #282B32;
+  }
+  #home-container hr {
+    width: 51px;
+    height: 0;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+    border: 2px solid #A04038;
+  }
+  #home-container h2 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 28px;
+  }
+  .containerhome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    margin: 8rem 2rem 8rem 2rem;
+    justify-content: space-evenly;
+  }
+  .subdivpart1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    background: #3B3E45;
+    opacity: 0.7;
+    align-content: center;
+    text-align: center;
+    height: 350px;
+    border-style: none;
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-evenly;
+  }
+  .icons h2 {
+    text-align: center;
+    font-size: 10px;
+    color: #FF5438;
+    font-weight: bold;
+  }
+  .icons .mod-items {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin: 1rem 0 0.7rem 0;
+  }
+  .icons .mod-items li {
+    list-style: none;
+    border-style: double;
+    border: solid 5px rgb(136, 50, 50);
+    background: #fff;
+  }
+  .icons .dynamicimg1 {
+    width: 50%;
+  }
+  .join-btn,
+  .speak-btn {
+    display: none;
+  }
+  #teachers h2 {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 25px;
+    color: #272a31;
+  }
+  #teachers hr {
+    width: 120px;
+    margin-top: 0.2rem;
+    margin-left: 45%;
+  }
+  #teachers .containerimg {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5rem;
+  }
+  #teachers .speakers1 {
+    margin-left: 30%;
+    margin-top: 1rem;
+  }
+  #teachers .descrip {
+    margin-left: 10%;
   }
 }/*# sourceMappingURL=styles.css.map */

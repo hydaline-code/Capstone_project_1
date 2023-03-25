@@ -21,8 +21,8 @@
 
 $breakpoint-tablet: 375px;
 @media (min-width: $breakpoint-tablet) {
-  
 
+ 
 body {
 	margin: 0 auto;
 	//width: 375px;
@@ -175,6 +175,8 @@ strong {
 
 	h2 {
 		text-align: center;
+    font-style: normal;
+    font-weight: 400;
 	}
 }
 
@@ -194,8 +196,8 @@ hr {
   @include flexcenter(column);
   background: map-get($colors-swatch,  white-light);
   border-style: double;
-  border: solid 2px;
-  margin: 1rem 2rem 0 2rem;
+  border: solid 2px rgb(222, 57, 57) ;
+  margin: 0.5rem 2rem 0 2rem;
   opacity: 0.9;
   align-content: center;
   text-align: center;
@@ -254,7 +256,7 @@ hr {
 
   .containerimg {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2 , 1fr);
     margin-top: 2rem;
   }
 
@@ -377,11 +379,213 @@ hr {
 		color: map-get($colors-swatch, redlight);
 	}
 
+  
+   
 }
 
-$breakpoint-tablet: 768px;
-@media (min-width: $breakpoint-tablet) {
-  body {
-    //background: red;
+@media (min-width: $breakpoint-tablet) and (max-width: 767px){
+  .header-1 {
+    display: none;
   }
+  .header-2 {
+    display: none;
+  }
+
+}
+
+$breakpoint-tablet-upper: 768px;
+@media (min-width: $breakpoint-tablet-upper) {
+
+  .navbar {
+    display: none;
+  }
+  .header-1 {
+    border: solid rgb(0, 140, 255) 3px;
+    height: 30px;
+  }
+  .header-1d   {
+@include flexcenter(row);
+justify-content:flex-end;
+    ul {
+      @include flexcenter(row);
+      justify-content: space-evenly;
+      gap: 2rem;
+      border: solid;
+      margin-right: 3rem;
+    }
+  }
+  
+  .header-2 {
+    border: solid red 3px;
+    height: 75px;
+  }
+  .desk-nav {
+    @include flexcenter(row);
+    justify-content: space-around;
+    border: solid;
+  }
+  .nav-d {
+   @include flexcenter(row);
+    justify-content: space-between;
+    border: solid;
+    gap: 2rem;
+  }
+
+  .home {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25.4902px;
+  }
+
+  .home-intro {
+    width: 732px;
+   
+    p{
+      font-size: 30px;
+    }
+   
+    h1{
+      font-size: 50px;
+    }
+  }
+  .intro-p {
+    width: 756px;
+    border: solid 4px #fff;
+    height: 180px;
+    padding-top: 1rem;
+    background: #fcfcfc;
+    p{
+      width: 696px;
+      background:  #e8e7e7;
+      height: 109px;
+      padding-top: 2rem;
+      margin-left: 1.5rem;
+    }
+  }
+
+  .intro-dat {
+    h2 {
+      width: 605px;
+      font-size: 35px;
+    }
+    p{
+      width: 608px;
+      font-size: 20px;
+    }
+  }
+
+  #home-container {
+   width: 1440px;
+    z-index: -1;
+    margin-top:0;
+    padding: 0 5rem 0 5rem;
+    background: #282B32;
+
+    hr {
+      width: 51px;
+      height: 0;
+      margin-top: 0.5rem;
+      margin-right: 2rem;
+      border: 2px solid #A04038;
+    }
+    
+    h2 {
+      text-align: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 28px;
+    }
+  }
+
+  .containerhome {
+    @include flexcenter(row);
+    margin: 8rem 2rem 8rem 2rem;
+    justify-content: space-evenly;
+  }
+
+.subdivpart1 {
+  @include flexcenter(column);
+  background:  #3B3E45;
+  opacity: 0.7;
+  align-content: center;
+  text-align: center;
+  height: 350px;
+  border-style: none;
+}
+
+.icons {
+  @include flexcenter(column);
+  justify-content: space-evenly;
+
+	h2 {
+		text-align: center;
+		font-size: 10px;
+    color: map-get($colors-swatch, redlight);
+    font-weight: bold;
+	}
+
+	.mod-items {
+		color: black;
+    font-weight: bold;
+		font-size: 15px;
+    @include flexcenter(row);
+    justify-content:space-evenly;
+    gap: 1rem;
+    margin: 1rem  0 0.7rem 0 ;
+	}
+
+	.mod-items li {
+		list-style: none;	
+    border-style: double;
+    border: solid 5px rgb(136, 50, 50);
+    background: map-get($colors-swatch, white-light);
+	}
+
+  .dynamicimg1 {
+    width: 50%;
+  }
+}
+
+.join-btn,
+.speak-btn {
+  display: none;
+}
+
+#teachers 
+{
+
+  h2 {
+    margin-top: 1rem;
+		text-align: center;
+		font-size: 25px;
+		color: map-get($colors-swatch, blacklight);
+	}
+
+	hr {
+		width: 120px;
+		margin-top: 0.2rem;
+    margin-left: 45%;
+	}
+
+.containerimg {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) ;
+  padding: 5rem;
+  
+}
+
+.speakers1 {
+  margin-left: 30%;
+  margin-top: 1rem;
+}
+
+.descrip {
+margin-left: 10%;
+}
+
+}
 }
