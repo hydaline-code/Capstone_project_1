@@ -340,11 +340,13 @@ footer .mobilef div .logo {
     margin: 0 auto;
     font-family: "Lato", sans-serif;
   }
+  
   main {
     background: url(../pics/tech.webp);
     background-size: contain;
     background-repeat: no-repeat;
   }
+
   header {
     height: 100px;
   }

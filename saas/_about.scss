@@ -1,345 +1,360 @@
 @import "./variable";
+
 @font-face {
-  font-family:"cocogoose";
+  font-family: "cocogoose";
   src: url(../font/Cocogoose.ttf);
 }
 
-
 @mixin flexcenter($direction) {
-	display: flex;
-	flex-direction: $direction;
-	justify-content: space-between;
-    align-items: center;
-    align-content: space-around;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
 }
 
-.about{
-	background:map-get($colors-swatch, gra);
-	background: linear-gradient(( rgba(77, 76, 76, 0), rgb(162, 161, 161)));
-	@include flexcenter(column);
-	gap: 1rem;
-	text-align: center;
+.about {
+  background: map-get($colors-swatch, blacklight);
+
+  @include flexcenter(column);
+
+  gap: 1rem;
+  text-align: center;
 }
 
 .about-h {
-	h1 {
-		font-size: 30px;
-    font-weight: 300;
+  h1 {
+    font-size: 30px;
     background: url(../pics/h1.jpg);
     background-repeat: repeat;
     background-size: cover;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
     text-transform: uppercase;
     font-family: "cocogoose", "Arial", sans-serif;
     font-weight: 500;
     line-height: 1.3;
     -webkit-font-smoothing: antialiased;
-	}
+  }
 
-	P {
-		color: map-get($colors-swatch, redlight);
-	}
+  p {
+    color: map-get($colors-swatch, redlight);
+  }
 }
 
 .about-p {
-	width: 300px;
-	border: #c0bebe solid 2px;
-	margin-left: 0.4rem;
-	background:map-get($colors-swatch, white-light);
-	box-shadow: 10px 5px 5px 3px #a1a0a0 ;
+  width: 300px;
+  border: #c0bebe solid 2px;
+  margin-left: 0.4rem;
+  background: map-get($colors-swatch, white-light);
+  box-shadow: 10px 5px 5px 3px #a1a0a0;
 
-	p {
-		margin: 0.5rem;
-		font-size: 14px;
-		text-align:justify;
-		color: map-get($colors-swatch, blacklight);
-	}
+  p {
+    margin: 0.5rem;
+    font-size: 14px;
+    text-align: justify;
+    color: map-get($colors-swatch, blacklight);
+  }
 }
 
 .about-info {
-	margin: 2rem;
-	text-align: center;
-	 p, u {
-		font-size: 12px;
-	 }
+  margin: 2rem;
+  text-align: center;
+
+  p,
+  u {
+    font-size: 12px;
+  }
 }
 
 .about-date {
-	text-align: center;
-	width: 270px
+  text-align: center;
+  width: 270px;
 }
 
 .about-host {
-	margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .about-host-p {
-	@include flexcenter (column);
-	text-align: center;
-	gap: 1rem;
+  @include flexcenter (column);
 
-	hr {
-		width: 30px;
-		margin-right: 40%;
-		margin-top: 0;
-		border:solid red 1px;
-	}
+  text-align: center;
+  gap: 1rem;
 
-	p {
-		margin-top: 1rem;
-	}
+  hr {
+    width: 30px;
+    margin-right: 40%;
+    margin-top: 0;
+    border: solid red 1px;
+  }
+
+  p {
+    margin-top: 1rem;
+  }
 }
 
 .about-logo {
-	padding: 2rem;
-	border: #d3d3d3 solid 2px;
-	@include flexcenter(row);
-	justify-content: space-around;
-	gap: 0;
-	width: 300px;
-	box-shadow: 7px 5px 5px 5px #bcb0b0;
+  padding: 2rem;
+  border: #d3d3d3 solid 2px;
 
-	.logo {
-		margin: 1rem;
-		width: 20%;
-		margin-left: 3rem;
-	}
+  @include flexcenter(row);
 
-	div {
-		margin-right: 2rem;
-		p {
-			font-size: 25px;
-			font-weight: 900;
-		}
+  justify-content: space-around;
+  gap: 0;
+  width: 300px;
+  box-shadow: 7px 5px 5px 5px #bcb0b0;
 
-		h5 {
-			font-size: 10px;
-		}
+  .logo {
+    margin: 1rem;
+    width: 20%;
+    margin-left: 3rem;
+  }
 
-		.line1 {
-			width: 60%;
-			border: solid  1px;
-			margin-left: 20%;
-		}
-	}
+  div {
+    margin-right: 2rem;
+
+    p {
+      font-size: 25px;
+      font-weight: 900;
+    }
+
+    h5 {
+      font-size: 10px;
+    }
+
+    .line1 {
+      width: 60%;
+      border: solid  1px;
+      margin-left: 20%;
+    }
+  }
 }
 
 .lined {
-	border: solid rgb(181, 179, 179) 1px;
-	width: 100%;
-	margin: 0;
-}
-
-.about-activities {
-	@include flexcenter(column);
-	margin-bottom: 2rem;
-	gap: 1rem;
-
-	.line3 {
-		width: 10%;
-		border: solid rgb(252, 56, 56) 1px;
-		margin-left:0;
-		margin-top: 0
-	}
-
-	.about-activities-1 {
-		@extend .about-activities;
-		 margin: 0; 
-		 gap: 1rem;
-			.event {
-				width: 100%;
-				z-index: 0;
-			}
-
-		.event1 {
-			margin-top: 1rem;
-			background-image: url("../pics/image44.png") ;
-			height: 180px;
-			width: 350px;
-			box-shadow: inset 0 0 0 1000vmax rgba(236, 82, 66, 0.5);
-
-			p {
-				text-align: center;
-				font-size: 16px;
-				margin-top: 1rem;
-				color:  map-get($colors-swatch, white-light);
-			}
-		}
-
-		.event2 {
-			background-image: url("../pics/imageorg.jpg") ;
-			@extend  .event1;
-
-			p {
-				@extend  p ;
-			}
-		}
-	}
-}
-
-.about-partner {
-	color:  map-get($colors-swatch, white-light);
-	background-color:  map-get($colors-swatch, blacklight);
-	padding: 1rem;
-
-	h3 {
-		text-align: center
-	}
-
-	hr {
-		border: solid red 1px;
-		margin-right: 10%;
-		width: 12%;
-	}
-	
-	.partner1 {
-		@include flexcenter(row);
-		list-style: none;
-		font-size: 25px;
-		gap: 1rem;
-		margin: 2rem  2rem 0  0;
-	}
-
-	.partner2 {
-		@extend .partner1;
-		margin: 2rem  2rem 2rem  2rem;
-	}
+  border: solid rgb(181, 179, 179) 1px;
+  width: 100%;
+  margin: 0;
 }
 
 footer .mobilef {
-		width: 100%;
-	 padding: 1.5rem;
-	@include flexcenter(row);
-	justify-content: space-around;
-	
-	
-	div {
-		@include flexcenter(row);
-		p {
-			font-size: 12px;
-			font-weight: bold;
-		}
-		.logo {
-			width: 25%;
-		}
-	}
+  width: 100%;
+  padding: 1.5rem;
+
+  @include flexcenter(row);
+
+  justify-content: space-around;
+
+  div {
+    @include flexcenter(row);
+
+    p {
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .logo {
+      width: 25%;
+    }
+  }
 }
 
+.about-activities {
+  @include flexcenter(column);
+
+  margin-bottom: 2rem;
+  gap: 1rem;
+
+  .line3 {
+    width: 10%;
+    border: solid rgb(252, 56, 56) 1px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .about-activities-1 {
+    @extend .about-activities;
+
+    margin: 0;
+    gap: 1rem;
+
+    .event {
+      width: 100%;
+      z-index: 0;
+    }
+
+    .event1 {
+      margin-top: 1rem;
+      background-image: url("../pics/image44.png");
+      height: 180px;
+      width: 350px;
+      box-shadow: inset 0 0 0 1000vmax rgba(236, 82, 66, 0.5);
+
+      p {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 1rem;
+        color: map-get($colors-swatch, white-light);
+      }
+    }
+
+    .event2 {
+      background-image: url("../pics/imageorg.jpg");
+
+      @extend .event1;
+
+      p {
+        @extend p ;
+      }
+    }
+  }
+}
+
+.about-partner {
+  color: map-get($colors-swatch, white-light);
+  background-color: map-get($colors-swatch, blacklight);
+  padding: 1rem;
+
+  h3 {
+    text-align: center;
+  }
+
+  hr {
+    border: solid red 1px;
+    margin-right: 10%;
+    width: 12%;
+  }
+
+  .partner1 {
+    @include flexcenter(row);
+
+    list-style: none;
+    font-size: 25px;
+    gap: 1rem;
+    margin: 2rem  2rem 0  0;
+  }
+
+  .partner2 {
+    @extend .partner1;
+
+    margin: 2rem  2rem 2rem  2rem;
+  }
+}
 
 @media (min-width: $breakpoint-tablet) {
-.about-info .dd {
-	display: none;
-}
+  .about-info .dd {
+    display: none;
+  }
 }
 
 $breakpoint-tablet-upper: 768px;
+
 @media (min-width: $breakpoint-tablet-upper) {
+  .about-p {
+    width: 793px;
 
-	footer {
-		background: #2E2E2E;
-		color:  #fff;
-		padding: 3rem;
-	}
+    p {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 35px 65px;
+      gap: 10px;
+    }
 
-	.about-activities{
-		background: #fff;
-		h3 {
-			margin-top: 2rem;
-		}
-		.about-activities-1 {
-			@include flexcenter(row);
-			.event1 p {
-				text-align: center;
-				font-size: 16px;
-				margin-top: 3rem;
-				color:  map-get($colors-swatch, white-light);
-			}
-		}	
-	}
+    .about-info .dd {
+      width: 640px;
+    }
+  }
 
-	.about-host {
-		@include flexcenter(column);
-		align-items: center;
-		padding: 0px;
-		gap: 35px;
+  .about-host {
+    @include flexcenter(column);
 
-		.about-host-p {
-			@include flexcenter (column);
-			text-align: center;
-			gap: 1rem;
+    align-items: center;
+    padding: 0;
+    gap: 35px;
 
-			hr {
-				width: 30px;
-				margin-right: 40%;
-				margin-top: 0;
-				border:solid red 1px;
-			}
-		
-			p {
-				width: 759px;
-				margin-top: 1rem;
-			}
-		}
-		.about-logo {
-			width: 590px;
-			position: relative;
-			border: #d3d3d3 solid 2px;
-			@include flexcenter(row);
-			flex-wrap: wrap;
-			justify-content: center;
+    .about-host-p {
+      @include flexcenter (column);
 
-	.logo {
-		margin-left: 3rem;
-	}
+      text-align: center;
+      gap: 1rem;
 
+      hr {
+        width: 30px;
+        margin-right: 40%;
+        margin-top: 0;
+        border: solid red 1px;
+      }
 
-	div {
-		
-		p {
-			font-size: 18px;
-			font-weight: 900;
-			margin-right: 2rem;
-		}
+      p {
+        width: 759px;
+        margin-top: 1rem;
+      }
+    }
 
-		h5 {
-			font-size: 10px;
-		}
+    .about-logo {
+      width: 590px;
+      position: relative;
+      border: #d3d3d3 solid 2px;
 
-		.line1 {
-			width: 20%;
-			border: solid  1px;
-			margin-left: 40%;
-		}
+      @include flexcenter(row);
 
-	}
-			
-		}
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .logo {
+        margin-left: 3rem;
+      }
+
+      div {
+        p {
+          font-size: 18px;
+          font-weight: 900;
+          margin-right: 2rem;
+        }
+
+        h5 {
+          font-size: 10px;
+        }
+
+        .line1 {
+          width: 20%;
+          border: solid  1px;
+          margin-left: 40%;
+        }
+      }
+    }
+  }
+
+  .about-activities {
+    background: #fff;
+
+    h3 {
+      margin-top: 2rem;
+    }
+
+    .about-activities-1 {
+      @include flexcenter (row);
+
+      .event1 p {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 3rem;
+        color: map-get($colors-swatch, white-light);
+      }
+    }
+  }
+
+  .about-info .dd1 {
+    display: none;
+  }
+
+  .about {
+    padding-top: 1rem;
+  }
+
+  footer {
+    background: #2e2e2e;
+    color: #fff;
+    padding: 3rem;
+  }
 }
-
-.about-p{  
-	width: 793px;
-	p {
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-		padding: 35px 65px;
-		gap: 10px;
-}
-
-.about-info .dd {
-	width: 640px;
-}
-
-}
-.about-info .dd1 {
-	display: none;
-}
-
-.about {
-	padding-top: 1rem;
-}
-}
-
-
-
