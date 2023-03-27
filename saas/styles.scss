@@ -435,6 +435,7 @@ $breakpoint-tablet-upper: 768px;
     padding: 0.5rem 1rem 0.5rem 1rem;
     color: #ec5242;
     font-weight: 800;
+    margin-top: 0.5rem;
   }
 
   .home {
@@ -511,21 +512,21 @@ $breakpoint-tablet-upper: 768px;
     width: 1440px;
     z-index: -1;
     margin-top: 0;
-    padding: 8rem 5rem 0 5rem;
+    padding: 10rem 5rem 0  5rem;
     background: #282b32;
+    text-align: center;
 
     h2 {
-      text-align: center;
       font-style: normal;
       font-weight: 400;
       font-size: 30px;
-      line-height: 28px;
       margin-right: 1rem;
+    }
 
-      hr {
-        width: 50px;
-        border: 2px solid #a04038;
-      }
+    hr {
+      width: 20%;
+      margin-top: 0;
+      border: 1px solid #a04038;
     }
 
     .containerhome {
