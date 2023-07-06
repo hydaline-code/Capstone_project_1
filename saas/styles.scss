@@ -25,6 +25,7 @@ $breakpoint-tablet: 375px;
   body {
     margin: 0 auto;
     font-family: $font;
+    overflow: scroll;
   }
 
   main {
