@@ -4,6 +4,7 @@
 
 # 📗 Table of Contents
 - [📖 About the Project](#about-project)
+  -  [ 💻Project-presentation](#Project-presentation)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -31,7 +32,7 @@
 > The capstone project is a unique opportunity to carry out independently  what has been taught through out the first module. It is to show how to come about with innovative solution for a real-world problems. This project  will assist us with figuring out how to find and analyze all the information and how to function with it proficiently.
 
 > Here is the link to the project presentation and experience we had :
-💻https://www.loom.com/share/4c04677cbb6a4727b7c01fcfc1bdfebb
+💻 https://www.loom.com/share/a17941ac5b1b4a42addcafd906160d05
 
 ## 🛠 Built With <a name="HTML-CSS & JAVASCRIPT ></a>
 
@@ -63,8 +64,7 @@
   
   <!------SEE LIVE DEMO ----->
 
-  ## 🚀 See Live Demo here: [ Live demo ](https://hydaline-code.github.io/Portfolio_Project/)
-
+  ## 🚀 See Live Demo here: [ Live demo ](https://hydaline-code.github.io/Capstone_project_1/)
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="Getting-Started"></a>
@@ -155,6 +155,5 @@ I would like to thank Microverse for this oppunity I get in improving myself pro
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
