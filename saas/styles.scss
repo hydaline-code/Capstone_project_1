@@ -38,6 +38,7 @@ $breakpoint-tablet: 375px;
   }
 
   .hambuger {
+  
     display: block;
     cursor: pointer;
     margin-right: 90%;
@@ -60,15 +61,22 @@ $breakpoint-tablet: 375px;
   }
 
   .nav-menu.active {
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 5;
     overflow: hidden;
 
-    @include flexcenter(row);
+    @include flexcenter(column);
 
     background-color: rgb(241, 144, 144);
     transition-timing-function: ease-out;
     padding: 1rem 0 1.5rem 1rem;
     opacity: 0.8;
+
+    .nav-items {
+      font-size: 30px;
+     padding: 3rem;
+    }
   }
 
   .nav-items {
@@ -439,6 +447,7 @@ $breakpoint-tablet-upper: 768px;
   }
 
   .home {
+    width: 100%;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -509,7 +518,7 @@ $breakpoint-tablet-upper: 768px;
   }
 
   #home-container {
-    width: 1440px;
+    width: 100%;
     z-index: -1;
     margin-top: 0;
     padding: 10rem 5rem 0  5rem;
@@ -536,7 +545,7 @@ $breakpoint-tablet-upper: 768px;
 
       .subdivpart1 {
         @include flexcenter(column);
-
+        width: 100%;
         background: #3b3e45;
         opacity: 0.7;
         text-align: center;

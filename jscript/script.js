@@ -158,9 +158,7 @@ const instructors = [
 ];
 
 instructors.forEach((lecturer) => {
-  /* const divpart2 = document.createElement('div');
-  divpart2.classList.add ('speakers');
-  gridimg.appendChild(divpart2); */
+
 
   const part2 = document.createElement('div');
   part2.classList.add('speakers1');
@@ -209,10 +207,6 @@ const people3 = document.querySelector('.containerimg div:nth-of-type(3)');
 const people4 = document.querySelector('.containerimg div:nth-of-type(4)');
 const people5 = document.querySelector('.containerimg div:nth-of-type(5)');
 const people6 = document.querySelector('.containerimg div:nth-of-type(6)');
-// const people2 = document.querySelector('.containerimg:nth-child(3)');
-/* const people3 = document.querySelector('.containerimg:nth-child(3)');
-const people4= document.querySelector('.containerimg:nth-child(4)');
-//const people1 = document.querySelector('.speakers:nth-child(2)'); */
 
 function media(screen) {
   if (screen.matches) {
