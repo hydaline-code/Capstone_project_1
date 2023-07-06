@@ -31,14 +31,18 @@
 
 > The capstone project is a unique opportunity to carry out independently  what has been taught through out the first module. It is to show how to come about with innovative solution for a real-world problems. This project  will assist us with figuring out how to find and analyze all the information and how to function with it proficiently.
 
-> Here is the link to the project presentation and experience we had :
-💻 https://www.loom.com/share/a17941ac5b1b4a42addcafd906160d05
+> Here is the link to the project presentation and experience we had 
+
+💻 [Watch video presentation]( https://www.loom.com/share/a17941ac5b1b4a42addcafd906160d05)
 
 ## 🛠 Built With <a name="HTML-CSS & JAVASCRIPT ></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Built with HTML-CSS and Javascript.
+> Built with
+- HTML
+- CSS 
+- Javascript.
 
 > Linter was applied so as to have style bug-free codes.
 
@@ -140,7 +144,9 @@ Feel free to check the [issues page](../../issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for this oppunity I get in improving myself professionally everyday.
+I will like to thank Microverse for this oppunity I get in improving myself professionally everyday.
+
+I will like to thank [Cindy Shin in Behance](https://www.behance.net/adagio07) for providing this amazing design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
