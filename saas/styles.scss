@@ -38,7 +38,6 @@ $breakpoint-tablet: 375px;
   }
 
   .hambuger {
-  
     display: block;
     cursor: pointer;
     margin-right: 90%;
@@ -63,7 +62,7 @@ $breakpoint-tablet: 375px;
   .nav-menu.active {
     position: fixed;
     width: 100%;
-    top: 5;
+    top: 1.5rem;
     overflow: hidden;
 
     @include flexcenter(column);
@@ -71,11 +70,12 @@ $breakpoint-tablet: 375px;
     background-color: rgb(241, 144, 144);
     transition-timing-function: ease-out;
     padding: 1rem 0 1.5rem 1rem;
-    opacity: 0.8;
+    opacity: 0.95;
 
     .nav-items {
       font-size: 30px;
-     padding: 3rem;
+      padding: 3rem;
+      font-weight: bold;
     }
   }
 
@@ -336,6 +336,10 @@ $breakpoint-tablet: 375px;
     background: #fff;
     border: #d3d3d3 solid 1px;
     border-radius: 2px;
+
+    .down {
+      color: rgb(249, 62, 62);
+    }
   }
 
   .des {
@@ -545,7 +549,7 @@ $breakpoint-tablet-upper: 768px;
 
       .subdivpart1 {
         @include flexcenter(column);
-        width: 100%;
+
         background: #3b3e45;
         opacity: 0.7;
         text-align: center;

@@ -158,8 +158,6 @@ const instructors = [
 ];
 
 instructors.forEach((lecturer) => {
-
-
   const part2 = document.createElement('div');
   part2.classList.add('speakers1');
   gridimg.appendChild(part2);
