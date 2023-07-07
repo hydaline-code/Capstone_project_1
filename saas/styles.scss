@@ -62,9 +62,11 @@ $breakpoint-tablet: 375px;
 
   .nav-menu.active {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     top: 1.5rem;
     overflow: hidden;
+    height: 100vh;
+    z-index: 10;
 
     @include flexcenter(column);
 
@@ -130,7 +132,7 @@ $breakpoint-tablet: 375px;
 
   .intro-p {
     box-shadow: 5px 5px 5px 3px #f4e8e8;
-    margin: 0.5rem;
+    margin: 2rem 0.5rem 0.5rem 0.5rem;
     border: #d3d2d2 solid 1.5px;
   }
 
@@ -178,16 +180,15 @@ $breakpoint-tablet: 375px;
       h2 {
         text-align: center;
         font-size: 13px;
-        color: red;
+        color: #ff5438;
         font-weight: bold;
       }
 
       .mod-items {
-        color: map-get($colors-swatch, blacklight);
-        font-size: 12px;
+        color: map-get($colors-swatch, white-light);
+        font-size: 16px;
         padding: 1rem;
         text-align: left;
-        width: 100px;
         margin-left: 1rem;
       }
 
@@ -201,14 +202,19 @@ $breakpoint-tablet: 375px;
       font-style: normal;
       font-weight: 400;
     }
+
+    .line {
+      width: 6vw;
+      margin-top: 0.3rem;
+      border: 1px solid #a04038;
+      margin-left: 47%;
+    }
+
+    .title2 {
+      display: none;
+    }
   }
 
-  hr {
-    width: 100px;
-    border: solid #ec5242;
-    margin-left: 40%;
-    margin-top: 0.5rem;
-  }
 
   .dynamicimg1 {
     width: 40%;
@@ -218,7 +224,7 @@ $breakpoint-tablet: 375px;
   .subdivpart1 {
     @include flexcenter(column);
 
-    background: map-get($colors-swatch, white-light);
+    background: map-get($colors-swatch, blacklight);
     border-style: double;
     border: solid 2px rgb(222, 57, 57);
     margin: 0.5rem 2rem 0 2rem;
@@ -228,13 +234,13 @@ $breakpoint-tablet: 375px;
   }
 
   .join-btn {
-    width: 270px;
-    height: 80px;
+    width: 75vw;
+    height: 15vh;
     margin: 2rem 2rem 2rem 3.4rem;
     background: map-get($colors-swatch, redlight);
     font-size: 25px;
     border-style: none;
-    color: map-get($colors-swatch, dark-white);
+    color: map-get($colors-swatch, white-light);
   }
 
   #teachers {
@@ -247,9 +253,11 @@ $breakpoint-tablet: 375px;
       color: map-get($colors-swatch, blacklight);
     }
 
-    hr {
-      width: 80px;
-      margin-top: 0.5rem;
+    .line {
+      width: 6vw;
+      margin-top: 0.2rem;
+      margin-left: 48%;
+      background: map-get($colors-swatch, red2);
     }
 
     .containerimg {
@@ -462,6 +470,7 @@ $breakpoint-tablet-upper: 768px;
 
   .home-intro {
     width: 732px;
+    margin-top: 2rem;
 
     p {
       font-size: 30px;
@@ -486,11 +495,10 @@ $breakpoint-tablet-upper: 768px;
       background: #e8e7e7;
       height: 109px;
       padding-top: 2rem;
-      margin-left: 1.5rem;
     }
   }
 
-  .intro-p p,
+  .intro-p,
   .p-present {
     margin: 1rem;
     padding: 0.5rem 0.3rem 0.5rem 0.7rem;
@@ -502,7 +510,7 @@ $breakpoint-tablet-upper: 768px;
   }
 
   strong {
-    color: map-get($colors-swatch, redlight);
+    color: map-get($colors-swatch, blacklight);
   }
 
   .intro-dat {
@@ -525,28 +533,44 @@ $breakpoint-tablet-upper: 768px;
   #home-container {
     width: 100%;
     z-index: -1;
-    margin-top: 0;
-    padding: 10rem 5rem 0  5rem;
+    height: 90vh;
+    padding: 7rem 0 4rem 0;
     background: #282b32;
     text-align: center;
 
     h2 {
+      margin-top: 8rem;
       font-style: normal;
       font-weight: 400;
       font-size: 30px;
       margin-right: 1rem;
     }
 
-    hr {
-      width: 20%;
-      margin-top: 0;
+    .line {
+      width: 5vw;
+      margin-top: 0.3rem;
       border: 1px solid #a04038;
+      margin-left: 47%;
+    }
+
+    .title2 {
+      text-align: center;
+      color: white;
+      margin-top: 4rem;
+
+      .line2 {
+        width: 14vw;
+        background: #fff;
+        margin-left: 43%;
+        text-align: center;
+      }
     }
 
     .containerhome {
       @include flexcenter(row);
 
-      margin: 8rem 2rem 8rem 2rem;
+      padding: 0 3rem 0 3rem;
+
 
       .subdivpart1 {
         @include flexcenter(column);
@@ -554,8 +578,9 @@ $breakpoint-tablet-upper: 768px;
         background: #3b3e45;
         opacity: 0.7;
         text-align: center;
-        width: 370px;
+        width: 35vw;
         border-style: none;
+        margin: 0 0.5em 0 0;
       }
     }
 
@@ -567,25 +592,26 @@ $breakpoint-tablet-upper: 768px;
       h2 {
         text-align: center;
         color: map-get($colors-swatch, redlight);
+        margin-top: 0;
       }
 
       .mod-items {
-        color: black;
+        color: #fff;
         font-weight: bold;
-        font-size: 15px;
+        font-size: 17px;
+        padding: 0.5rem;
 
-        @include flexcenter(row);
+
+        @include flexcenter(column);
 
         justify-content: space-evenly;
-        gap: 1rem;
-        margin: 1rem 0 1.3rem 0;
+        gap: 0.5rem;
+        margin: 0 0 1.3rem 0;
       }
 
       .mod-items li {
         list-style: none;
-        border-style: double;
-        border: solid 3px rgb(136, 50, 50);
-        background: map-get($colors-swatch, white-light);
+        background: map-get($colors-swatch, black);
       }
 
       .dynamicimg1 {
@@ -607,10 +633,11 @@ $breakpoint-tablet-upper: 768px;
       color: map-get($colors-swatch, blacklight);
     }
 
-    hr {
-      width: 120px;
+    .line {
+      width: 4vw;
       margin-top: 0.2rem;
-      margin-left: 45%;
+      margin-left: 48%;
+      background: map-get($colors-swatch, red2);
     }
 
     .containerimg {
@@ -647,8 +674,10 @@ $breakpoint-tablet-upper: 768px;
       gap: 5rem;
 
       hr {
-        width: 50px;
+        width: 3vw;
         border: 2px solid #a04038;
+        margin-left: 30%;
+        margin-top: 0.3rem;
       }
     }
 

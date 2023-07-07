@@ -12,7 +12,7 @@
 }
 
 .about {
-  background: map-get($colors-swatch, blacklight);
+  background: #f7f7f8;
 
   @include flexcenter(column);
 
@@ -62,7 +62,7 @@
   p,
   u {
     font-size: 12px;
-    color: #fff;
+    color: #000;
   }
 }
 
@@ -192,17 +192,17 @@ footer .mobilef {
     }
 
     .event1 {
-      margin-top: 1rem;
+      margin-top: 2rem;
       background-image: url("../pics/image44.png");
-      height: 180px;
+      height: 200px;
       width: 350px;
       box-shadow: inset 0 0 0 1000vmax rgba(236, 82, 66, 0.5);
 
       p {
         text-align: center;
-        font-size: 16px;
-        margin-top: 1rem;
+        font-size: 20px;
         color: map-get($colors-swatch, white-light);
+        padding-top: 3rem;
       }
     }
 
@@ -229,10 +229,12 @@ footer .mobilef {
     text-align: center;
   }
 
-  hr {
-    border: solid red 1px;
-    margin-right: 10%;
-    width: 12%;
+  .fl {
+    background: map-get($colors-swatch, red2);
+    margin-left: 29%;
+    margin-top: 0.5rem;
+    width: 7vw;
+    height: 0.8vw;
   }
 
   .partner1 {
@@ -286,7 +288,7 @@ $breakpoint-tablet-upper: 768px;
     .dd,
     u {
       width: 640px;
-      color: #fff;
+      color: #000;
     }
 
     .dd1 {
@@ -308,7 +310,7 @@ $breakpoint-tablet-upper: 768px;
 
       hr {
         width: 30px;
-        margin-right: 40%;
+        margin-right: 9%;
         margin-top: 0;
         border: solid red 1px;
       }
@@ -329,10 +331,12 @@ $breakpoint-tablet-upper: 768px;
       justify-content: center;
 
       div {
+        margin-left: 3rem;
+
         p {
           font-size: 18px;
           font-weight: 900;
-          margin-right: 2rem;
+          margin: 0 1.5rem 0 2rem;
         }
 
         h5 {

@@ -71,6 +71,9 @@ orgpart1.appendChild(title);
 title.textContent = 'Courses offered';
 const lineh = document.createElement('hr');
 title.appendChild(lineh);
+lineh.classList.add('line');
+
+
 
 const para = document.createElement('p');
 para.classList.add('p-present');
@@ -78,8 +81,15 @@ orgpart1.appendChild(para);
 para.textContent = 'Our digital making projects have step-by-step instructions to teach you how to think computatioanlly, then create games, animations and much more';
 
 const gridimg2 = document.createElement('div');
+const title2 = document.createElement('h2');
 gridimg2.classList.add('containerhome');
 orgpart1.appendChild(gridimg2);
+orgpart1.appendChild(title2);
+title2.textContent = 'Future Courses ';
+title2.classList.add('title2');
+const lineh2 = document.createElement('hr');
+title2.appendChild(lineh2);
+lineh2.classList.add('line2');
 
 courses.forEach((part) => {
   const divpart1 = document.createElement('div');
@@ -120,6 +130,7 @@ speaker.appendChild(title1);
 title1.textContent = 'Instructors';
 const lineh1 = document.createElement('hr');
 title1.appendChild(lineh1);
+lineh1.classList.add('line');
 
 const gridimg = document.createElement('div');
 gridimg.classList.add('containerimg');
