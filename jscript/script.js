@@ -73,8 +73,6 @@ const lineh = document.createElement('hr');
 title.appendChild(lineh);
 lineh.classList.add('line');
 
-
-
 const para = document.createElement('p');
 para.classList.add('p-present');
 orgpart1.appendChild(para);

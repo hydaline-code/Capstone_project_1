@@ -215,7 +215,6 @@ $breakpoint-tablet: 375px;
     }
   }
 
-
   .dynamicimg1 {
     width: 40%;
     padding: 1rem;
@@ -571,7 +570,6 @@ $breakpoint-tablet-upper: 768px;
 
       padding: 0 3rem 0 3rem;
 
-
       .subdivpart1 {
         @include flexcenter(column);
 
@@ -600,7 +598,6 @@ $breakpoint-tablet-upper: 768px;
         font-weight: bold;
         font-size: 17px;
         padding: 0.5rem;
-
 
         @include flexcenter(column);
 
