@@ -1,0 +1,424 @@
+@import "./variable";
+
+@font-face {
+  font-family: "cocogoose";
+  src: url(../font/Cocogoose.ttf);
+}
+
+@mixin flexcenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+}
+
+.about {
+  background: #f7f7f8;
+
+  @include flexcenter(column);
+
+  gap: 1rem;
+  text-align: center;
+}
+
+.about-h {
+  h1 {
+    font-size: 30px;
+    background: url(../pics/h1.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    text-transform: uppercase;
+    font-family: "cocogoose", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    color: map-get($colors-swatch, blacklight);
+  }
+}
+
+.about-p {
+  border: #fff solid 2px;
+  background: map-get($colors-swatch, white-light);
+  padding: 1rem;
+
+  p {
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+}
+
+.about-info {
+  margin: 2rem;
+  text-align: center;
+
+  p,
+  u {
+    font-size: 12px;
+    color: #000;
+  }
+}
+
+.about-date {
+  font-family: $font;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #838383;
+}
+
+.about-host {
+  margin-bottom: 2rem;
+}
+
+.about-host-p {
+  @include flexcenter (column);
+
+  margin-top: 1rem;
+  text-align: center;
+  gap: 1rem;
+
+  hr {
+    width: 30px;
+    margin-right: 40%;
+    margin-top: 0;
+    border: solid red 1px;
+  }
+
+  .host-p {
+    margin-top: 1rem;
+    font-family: $font;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    text-align: center;
+  }
+}
+
+.about-logo {
+  padding: 2rem;
+  border: #d3d3d3 solid 2px;
+
+  @include flexcenter(row);
+
+  justify-content: space-around;
+  gap: 0;
+  width: 300px;
+  box-shadow: 7px 5px 5px 5px #bcb0b0;
+
+  .logo {
+    margin: 1rem;
+    width: 20%;
+    margin-left: 3rem;
+  }
+
+  div {
+    margin-right: 2rem;
+
+    p {
+      font-size: 25px;
+      font-weight: 900;
+    }
+
+    h5 {
+      font-size: 10px;
+    }
+
+    .line1 {
+      width: 60%;
+      border: solid  1px;
+      margin-left: 20%;
+    }
+  }
+}
+
+.lined {
+  border: solid rgb(181, 179, 179) 1px;
+  width: 100%;
+  margin: 0;
+}
+
+footer .mobilef {
+  width: 100%;
+  padding: 1.5rem;
+
+  @include flexcenter(row);
+
+  justify-content: space-around;
+
+  div {
+    @include flexcenter(row);
+
+    p {
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .logo {
+      width: 25%;
+    }
+  }
+}
+
+.about-activities {
+  @include flexcenter(column);
+
+  margin-bottom: 2rem;
+  gap: 1rem;
+
+  .line3 {
+    width: 3vw;
+    border: solid rgb(252, 56, 56) 1px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  h3 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  p {
+    color: #838383;
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -0.03em;
+    text-align: center;
+  }
+
+  .about-activities-1 {
+    @extend .about-activities;
+
+    font-size: 25px;
+    margin: 0;
+    gap: 1rem;
+
+    .event {
+      width: 100%;
+      z-index: 0;
+    }
+
+    .event1 {
+      margin-top: 2rem;
+      background-image: url("../pics/image44.png");
+      height: 200px;
+      width: 350px;
+      box-shadow: inset 0 0 0 1000vmax rgba(236, 82, 66, 0.5);
+
+      p {
+        text-align: center;
+        color: map-get($colors-swatch, white-light);
+        font-family: $font;
+      }
+
+      u {
+        font-size: 40px;
+        font-family: $font;
+      }
+    }
+
+    .event2 {
+      background-image: url("../pics/imageorg.jpg");
+
+      @extend .event1;
+
+      p {
+        @extend p ;
+      }
+    }
+  }
+}
+
+.about-partner {
+  color: map-get($colors-swatch, white-light);
+  background-color: map-get($colors-swatch, blacklight);
+  padding: 1rem;
+
+  @include flexcenter(column);
+
+  h3 {
+    text-align: center;
+  }
+
+  .fl {
+    background: map-get($colors-swatch, red2);
+    margin-left: 29%;
+    margin-top: 0.5rem;
+    width: 7vw;
+    height: 0.8vw;
+  }
+
+  .partner1 {
+    @include flexcenter(row);
+
+    justify-content: center;
+    list-style: none;
+    font-size: 25px;
+    gap: 1rem;
+  }
+
+  .partner1 li {
+    margin: 2rem  2rem 0  0;
+  }
+
+  .partner2 {
+    @extend .partner1;
+
+    margin: 2rem  2rem 2rem  2rem;
+  }
+}
+
+$breakpoint-tablet: 375px;
+
+@media (min-width: $breakpoint-tablet) {
+  .about-info .dd1 {
+    display: none;
+  }
+
+  .event2 > p {
+    padding-top: 3rem;
+  }
+
+  .event1 > p {
+    padding-top: 3rem;
+  }
+}
+
+$breakpoint-tablet-upper: 768px;
+
+@media (min-width: $breakpoint-tablet-upper) {
+  .about {
+    padding-top: 1rem;
+  }
+
+  .about-p {
+    width: 793px;
+
+    p {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 35px 65px;
+      gap: 10px;
+    }
+  }
+
+  .about-info {
+    .dd,
+    u {
+      width: 640px;
+      color: #000;
+      margin-top: 0.3rem;
+    }
+
+    .dd1 {
+      display: none;
+    }
+  }
+
+  .about-host {
+    @include flexcenter(column);
+
+    padding: 0;
+    gap: 35px;
+
+    .about-host-p {
+      @include flexcenter (column);
+
+      text-align: center;
+      gap: 1rem;
+
+      hr {
+        width: 30px;
+        margin-right: 9%;
+        margin-top: 0;
+        border: solid red 1px;
+      }
+
+      p {
+        width: 759px;
+        margin-top: 1rem;
+      }
+    }
+
+    .about-logo {
+      width: 590px;
+      border: #d3d3d3 solid 2px;
+      flex-wrap: wrap;
+
+      @include flexcenter(row);
+
+      justify-content: center;
+
+      div {
+        margin-left: 3rem;
+
+        p {
+          font-size: 18px;
+          font-weight: 900;
+          margin: 0 1.5rem 0 2rem;
+        }
+
+        h5 {
+          font-size: 10px;
+        }
+
+        .line1 {
+          width: 20%;
+          border: solid  1px;
+          margin-left: 40%;
+        }
+      }
+    }
+  }
+
+  .about-activities {
+    background: #fff;
+
+    h3 {
+      margin-top: 2rem;
+    }
+
+    .about-activities-1 {
+      @include flexcenter (row);
+
+      .event1 p {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 3rem;
+        color: map-get($colors-swatch, white-light);
+      }
+    }
+  }
+
+  .aboutfoot {
+    @include flexcenter(row);
+
+    background: #2e2e2e;
+    color: #fff;
+    padding: 3rem;
+    text-align: center;
+
+    div img {
+      width: 50%;
+    }
+  }
+
+  footer .foot-p {
+    @include flexcenter(column);
+
+    gap: 1rem;
+  }
+}
