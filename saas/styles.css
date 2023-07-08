@@ -585,9 +585,10 @@ footer .mobilef div .logo {
   }
 
   .intro-p {
-    box-shadow: 5px 5px 5px 3px #f4e8e8;
+    background: #f8f8f8;
     margin: 2rem 0.5rem 0.5rem 0.5rem;
-    border: #d3d2d2 solid 1.5px;
+    border: 4px solid #fff;
+    color: #515151;
   }
 
   .intro-p p,
@@ -595,8 +596,12 @@ footer .mobilef div .logo {
   .about-activities .about-activities-1 .event2 .intro-p p,
   .p-present {
     margin: 1rem;
-    padding: 0.5rem 0.3rem 0.5rem 0.7rem;
-    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: -0.01em;
+    text-align: left;
   }
 
   u {
@@ -966,17 +971,15 @@ footer .mobilef div .logo {
   .intro-p {
     width: 80vw;
     padding-top: 1rem;
-    background: #fcfcfc;
-    box-shadow: 5px 5px 5px 3px #f4e8e8;
+    background: #f8f8f8;
     margin: 0.5rem;
-    border: #fff solid 4px;
+    border: 8.5px solid #fff;
   }
 
   .intro-p p,
   .intro-p .about-activities .about-activities-1 .event2 p,
   .about-activities .about-activities-1 .event2 .intro-p p {
     width: 70vw;
-    background: rgba(255, 255, 255, 0.9058823529);
     padding-top: 2rem;
     font-family: "Lato", sans-serif;
     font-size: 25px;
@@ -1047,14 +1050,19 @@ footer .mobilef div .logo {
 
   #home-container .title2 {
     text-align: center;
-    color: white;
+    color: #fff;
     margin-top: 4rem;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.01em;
   }
 
   #home-container .title2 .line2 {
-    width: 14vw;
+    width: 10vw;
     background: #fff;
-    margin-left: 43%;
+    margin-left: 45%;
     text-align: center;
   }
 
